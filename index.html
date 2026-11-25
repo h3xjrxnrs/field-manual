@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="An independent, free Rust field manual by Lalo. Interactive guides and tools for farming, genetics, electricity and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Field Manual — Rust guides by Lalo">
+  <meta property="og:description" content="Learn Rust. Master its systems. Free, independent tools and interactive guides.">
+  <title>Field Manual — Rust guides by Lalo</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23101010'/%3E%3Cpath d='M17 13h8v31h23v8H17z' fill='%23eeeeee'/%3E%3Cpath d='M38 13h10v10H38z' fill='%23eeeeee'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./js/navigation.js"></script>
+  <script type="module" src="./app.js"></script>
+  <link rel="stylesheet" href="./farm.css">
+  <script type="module" src="./js/farm.js"></script>
+  <link rel="stylesheet" href="./electric.css">
+  <script type="module" src="./js/electric.js"></script>
+  <link rel="stylesheet" href="./visual.css">
+  <script type="module" src="./js/visual-guides.js"></script>
+  <link rel="stylesheet" href="./building.css">
+  <script type="module" src="./js/building.js"></script>
+  <link rel="stylesheet" href="./monuments.css">
+  <script type="module" src="./js/monuments.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Field Manual home">
+      <span class="brand-mark" aria-hidden="true">L<span>.</span></span>
+      <span class="brand-text"><strong>FIELD MANUAL</strong><small>RUST / BY LALO</small></span>
+    </a>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#guides">Guides</a>
+      <a href="#genetics">Tools</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-action" href="#genetics">Open genetics <span aria-hidden="true">↗</span></a>
+    <a class="header-profile" href="https://steamcommunity.com/profiles/76561199152513308" target="_blank" rel="noopener noreferrer" aria-label="my link — Lalo Steam profile (opens in a new tab)"><img src="./assets/lalo-profile.jpg" alt="" width="36" height="36"><span>my link <span class="profile-arrow" aria-hidden="true">↗</span></span></a>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Guide navigation">
+      <nav>
+        <p class="nav-label">FIELD MANUAL / 01</p>
+        <a href="#home">Overview</a>
+        <a href="#guides">Guide index</a>
+        <p class="nav-label">SYSTEMS</p>
+        <a href="#genetics">Genetics <span class="nav-status">01</span></a>
+        <a href="#farming">Farming <span class="nav-status">02</span></a>
+        <a href="#electricity">Electricity <span class="nav-status">03</span></a>
+        <a href="#industrial">Industrial <span class="nav-status">04</span></a>
+        <a href="#building">Building <span class="nav-status">05</span></a>
+        <a href="#monuments">Monuments <span class="nav-status">06</span></a>
+
+
+        <p class="nav-label">PROJECT</p>
+        <a href="#about">About this project</a>
+      </nav>
+      <div class="sidebar-footer"><span class="wordmark">LALO<span>.</span></span><small>INDEPENDENT RUST PROJECT</small></div>
+    </aside>
+    <main id="main-content" class="main-content">
+      <noscript><p class="notice">JavaScript is required for interactive tools. The guide index remains available.</p></noscript>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">INDEPENDENT RUST KNOWLEDGE BASE / EST. 2026</p>
+          <h1 id="hero-title">Know the game.<br>Master its systems.</h1>
+          <p class="hero-description">A field manual for Rust players. Explore game mechanics, interactive guides and browser-based tools built to make the next wipe a little less unforgiving.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#genetics">Explore genetics <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#guides">Browse guides</a>
+          </div>
+          <p class="hero-meta">FREE TO USE <span aria-hidden="true">/</span> NO INSTALLATION <span aria-hidden="true">/</span> INDEPENDENT</p>
+        </div>
+        <div class="hero-art" aria-hidden="true"><span class="hero-index">FM—001</span><span class="hero-monogram">L.</span><span class="hero-signature">A project by Lalo.</span></div>
+      </section>
+      <section class="section" id="guides" aria-labelledby="guides-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / INDEX</p><h2 id="guides-title">Explore the manual.</h2></div><p>Game systems, explained and made interactive. New modules will be published as they are completed.</p></div>
+        <div class="guide-grid">
+          <a class="guide-card guide-card-featured" href="#genetics"><p class="card-index">01 / GENETICS</p><h3>Plant genetics</h3><p>Collect clone genetics, compare traits and plan crossbreeding.</p><span class="card-link">Explore module <span aria-hidden="true">↗</span></span></a>
+          <a class="guide-card" href="#farming"><p class="card-index">02 / FARMING</p><h3>Farming</h3><p>Illustrated farm builds, irrigation, crops and a full blueprint editor.</p><span class="card-link">Open farming guides <span aria-hidden="true">↗</span></span></a>
+          <a class="guide-card" href="#electricity"><p class="card-index">03 / ELECTRICITY</p><h3>Electricity</h3><p>Wiring basics, component reference and ready-to-build circuits.</p><span class="card-link">Open handbook <span aria-hidden="true">↗</span></span></a>
+          <a class="guide-card" href="#industrial"><p class="card-index">04 / INDUSTRIAL</p><h3>Industrial</h3><p>Auto smelting, loot sorting, crafting and storage systems.</p><span class="card-link">Open automation guides <span aria-hidden="true">↗</span></span></a>
+          <a class="guide-card" href="#building"><p class="card-index">05 / BUILDING</p><h3>Building</h3><p>Discover creator-made Rust bases, filter by team and budget, and watch the original video tutorials.</p><span class="card-link">Open base library <span aria-hidden="true">↗</span></span></a>
+          <a class="guide-card" href="#monuments"><p class="card-index">06 / MONUMENTS</p><h3>Monuments</h3><p>All RTs in one place: radiation, keycards, fuses, amenities and a quick YouTube guide link.</p><span class="card-link">Open monument library <span aria-hidden="true">↗</span></span></a>
+
+
+        </div>
+      </section>
+      <section class="section genetics-section" id="genetics" aria-labelledby="genetics-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / INTERACTIVE TOOLS / 001</p><h2 id="genetics-title">Genetics lab.</h2></div><p>Collect your plant genetics and work toward a target combination. Compare reachable gene combinations and step-by-step breeding plans.</p></div>
+        <div class="tool-shell" id="genetics-tool">
+          <div class="tool-header"><div><p class="eyebrow">FIELD MANUAL / LAB 01</p><h3>Clone scanner</h3></div><output id="scanner-status" class="status" aria-live="polite">Not initialized</output></div>
+          <div class="tool-grid">
+            <section class="tool-panel" aria-labelledby="capture-title">
+              <div class="panel-heading"><h4 id="capture-title">01. Screen capture</h4><span>LOCAL PROCESSING / V2</span></div>
+              <div class="capture-viewport" id="capture-viewport">
+                <video id="capture-video" autoplay muted playsinline hidden aria-label="Shared screen preview"></video>
+                <canvas id="capture-overlay" hidden aria-hidden="true"></canvas>
+                <div class="capture-placeholder" id="capture-placeholder"><span class="capture-symbol" aria-hidden="true">[ + ]</span><p>No screen selected</p><small>Share your Rust window to scan visible plant genes.</small></div>
+              </div>
+              <div class="button-row">
+                <button type="button" class="button button-primary" id="start-capture" disabled>Start scanning</button>
+                <button type="button" class="button button-secondary" id="stop-capture" disabled>Stop</button>
+                <button type="button" class="button button-secondary" id="scan-frame" disabled>Scan frame</button>
+              </div>
+              <div class="scan-settings"><label><input type="checkbox" id="auto-save" checked> Auto-add stable live detections</label><label><input type="checkbox" id="sound-enabled" checked> Sound feedback</label></div>
+              <label class="field-label" for="image-input">Or select a screenshot</label>
+              <input id="image-input" type="file" accept="image/png,image/jpeg,image/webp" disabled>
+              <p class="helper-text" id="capture-help">Planned workflow: share only the game window. Visible genes will be processed in your browser, not uploaded to a server.</p>
+              <div class="scan-result" id="scan-result" aria-live="polite"><h5>Latest detection</h5><p id="detected-genes">No genes detected.</p><p id="detection-confidence"></p></div>
+            </section>
+            <section class="tool-panel" aria-labelledby="collection-title">
+              <div class="panel-heading"><h4 id="collection-title">02. Clone library</h4><output id="clone-count" aria-live="polite">0 clones</output></div>
+              <form id="clone-form" autocomplete="off">
+                <label class="field-label" for="plant-type">Plant type</label>
+                <select id="plant-type" name="plant" disabled><option value="hemp">Hemp</option><option value="corn">Corn</option><option value="potato">Potato</option><option value="pumpkin">Pumpkin</option><option value="berry">Berry (select exact type below)</option><option value="other">Other</option></select>
+                <label class="field-label" for="plant-label">Species / label (optional)</label>
+                <input id="plant-label" name="label" type="text" maxlength="60" placeholder="e.g. Blue berry" disabled>
+                <label class="field-label" for="clone-genes">Six genes</label>
+                <div class="input-row"><input id="clone-genes" name="genes" type="text" minlength="6" maxlength="6" pattern="[GYHWXgyhwx]{6}" placeholder="GGGYYY" spellcheck="false" required disabled><button class="button button-primary" type="submit" id="add-clone" disabled>Add clone</button></div>
+                <p class="helper-text">Allowed symbols: G, Y, H, W, X. Record clones of the same species together when planning a cross.</p>
+                <p id="clone-form-message" role="status"></p>
+              </form>
+              <div class="clone-list-container"><ul id="clone-list" class="clone-list" aria-label="Saved clones"></ul><p id="clone-empty" class="empty-state">Your clone library is empty.</p></div>
+              <div class="button-row"><button type="button" id="export-clones" class="button button-secondary" disabled>Export</button><button type="button" id="clear-clones" class="button button-secondary" disabled>Clear library</button></div>
+            </section>
+          </div>
+          <section class="tool-panel breeder-panel" aria-labelledby="breeder-title">
+            <div class="panel-heading"><h4 id="breeder-title">03. Crossbreeding planner</h4><span>ENGINE / PENDING</span></div>
+            <form id="breeder-form" autocomplete="off">
+              <div class="breeder-fields"><div><label class="field-label" for="target-genes">Preferred target genetics</label><input id="target-genes" name="target" type="text" minlength="6" maxlength="6" pattern="[GYHWXgyhwx]{6}" value="GGGYYY" required disabled></div><div><label class="field-label" for="breeding-depth">Maximum crosses</label><select id="breeding-depth" name="depth" disabled><option value="1">1 cross</option><option value="2">2 crosses</option><option value="3" selected>3 crosses</option></select></div><button type="submit" class="button button-primary" id="calculate-breeding" disabled>Find best options</button></div>
+            </form>
+            <div id="breeding-results" class="breeding-results" aria-live="polite"><p id="breeding-message">A verified breeding engine will be added in a later release.</p><div id="breeding-options" class="breeding-options" role="group" aria-label="Breeding options"></div><div id="selected-plan" class="selected-plan" hidden><div class="selected-plan-heading"><h5 id="selected-plan-title"></h5><span id="selected-plan-meta"></span></div><div id="recipe-cards" class="recipe-cards"></div><details class="plan-instructions"><summary>Full planting instructions</summary><ol id="breeding-steps" class="breeding-steps"></ol></details></div></div>
+            <div class="planter-preview" id="planter-preview" hidden><h5>Planting layout</h5><div class="planter-grid" id="planter-grid" role="group" aria-label="Nine planter positions"><span data-cell="0">1</span><span data-cell="1">2</span><span data-cell="2">3</span><span data-cell="3">4</span><span data-cell="4">5</span><span data-cell="5">6</span><span data-cell="6">7</span><span data-cell="7">8</span><span data-cell="8">9</span></div></div>
+          </section>
+          <details class="tool-help"><summary>How the lab is intended to work</summary><ol><li>Start screen sharing or choose a screenshot.</li><li>Display a plant's six-gene tooltip in Rust.</li><li>Select the correct species first. Stable live detections are automatically added when Auto-add is on; verify saved clones against the game.</li><li>Choose a preferred target and compare up to four reachable alternatives; open a card for all cross layouts.</li></ol><p>Tools will operate on visible or manually supplied information. No game-process access, game input automation or server monitoring is planned.</p></details>
+        </div>
+        <div class="gene-reference"><h3>Gene reference</h3><p>Each plant has six gene positions. The five gene types describe different traits.</p><dl class="gene-grid"><div class="gene gene-positive"><dt>G</dt><dd>Growth</dd></div><div class="gene gene-positive"><dt>Y</dt><dd>Yield</dd></div><div class="gene gene-positive"><dt>H</dt><dd>Hardiness</dd></div><div class="gene gene-negative"><dt>W</dt><dd>Water consumption</dd></div><div class="gene gene-negative"><dt>X</dt><dd>Empty gene</dd></div></dl></div>
+      </section>
+<section class="section" id="farming" aria-labelledby="farm-title">
+  <div class="section-heading"><div><p class="eyebrow">02 / INTERACTIVE TOOLS / 002</p><h2 id="farm-title">Farming.</h2></div><p>Follow illustrated farm builds, or plan your own multi-floor blueprint in the advanced designer below.</p></div>
+  <p class="vg-designer-jump">New to farming? Start with a visual guide. <a href="#fd-app">Jump to the advanced Farm Designer ↘</a></p>
+  <div id="vg-farming" class="vg-root" aria-label="Farming visual guides"></div>
+  <div class="fd-shell" id="fd-app">
+    <header class="fd-head"><div><p class="eyebrow">FIELD MANUAL / LAB 02 / V1.0</p><h3>Farm architecture studio</h3></div><span class="fd-tag">LOCAL / NO UPLOADS</span></header>
+    <div class="fd-project"><label>Project name<input id="fd-name" maxlength="60" value="My farm"></label><label>Width<select id="fd-width"></select></label><label>Length<select id="fd-height"></select></label><label>Floors<select id="fd-floors"></select></label><label>Biome<select id="fd-biome"><option value="temperate">Temperate</option><option value="snow">Snow</option><option value="desert">Desert</option></select></label><label>Template<select id="fd-template"><option value="">Choose template…</option><option value="starter">Starter / 3 × 2 (4 beds)</option><option value="river">River farm / 4 × 3</option><option value="coastal">Coastal / 4 × 3</option><option value="tower">Tower / 4 × 3 × 3</option><option value="empty">Empty blueprint</option></select></label><button id="fd-apply">Load template</button></div>
+    <div class="fd-metrics" id="fd-metrics"></div>
+    <div class="fd-workspace">
+      <aside class="fd-palette"><p class="fd-kicker">01 / COMPONENTS</p><div id="fd-palette"></div><p class="fd-hint">Choose a component, then click a foundation. Ceiling equipment can snap to tile centers or intersections.</p></aside>
+      <div class="fd-stage"><div class="fd-toolbar"><div class="fd-tools" id="fd-tools"><button data-mode="select" aria-pressed="true">Select</button><button data-mode="place">Place</button><button data-mode="move">Move</button><button data-mode="erase">Erase</button></div><div class="fd-tools"><button id="fd-undo" title="Undo">↶ Undo</button><button id="fd-redo">↷ Redo</button></div></div>
+        <div class="fd-toolbar"><div class="fd-tools" id="fd-floor-tabs"></div><div class="fd-tools"><button id="fd-auto">Auto assign utilities</button><button id="fd-copyfloor">Duplicate floor</button></div></div>
+        <div class="fd-view-settings"><label><input type="checkbox" id="fd-light" checked> Light</label><label><input type="checkbox" id="fd-water" checked> Water</label><label><input type="checkbox" id="fd-heat"> Heat</label><label><input type="checkbox" id="fd-links" checked> Links</label><label><input type="checkbox" id="fd-labels" checked> Labels</label><label>Zoom <input id="fd-zoom" type="range" min="70" max="180" value="100"></label></div>
+        <div class="fd-map-wrap" id="fd-map-wrap"><svg id="fd-map" role="group" aria-label="Interactive farm floor plan"></svg></div>
+        <div class="fd-legend"><span><i class="fd-dot light"></i> Light coverage</span><span><i class="fd-dot water"></i> Irrigation</span><span><i class="fd-dot heat"></i> Heat estimate</span><span>Dashed links = utility assignment</span></div><output id="fd-status" role="status">Ready.</output>
+      </div>
+      <aside class="fd-inspector"><p class="fd-kicker">02 / INSPECTOR</p><div id="fd-inspector"></div><div class="fd-rule"></div><p class="fd-kicker">03 / DESIGN PARAMETERS</p><label>Light radius (m)<input id="fd-light-radius" type="number" min="1" max="12" step="0.1" value="3"></label><label>Sprinkler radius (m)<input id="fd-water-radius" type="number" min="1" max="12" step="0.1" value="3.2"></label><label>Heater radius estimate (m)<input id="fd-heat-radius" type="number" min="1" max="12" step="0.1" value="3"></label><label>Effective solar hours / 24h<input id="fd-solar-hours" type="number" min="0" max="24" step="0.5" value="8"></label><label>Distribution reserve (rW / circuit)<input id="fd-reserve" type="number" min="0" max="40" value="3"></label><p class="fd-hint">Radii and solar hours are adjustable planning assumptions, not measured live Rust values.</p></aside>
+    </div>
+    <div class="fd-project fd-save"><button id="fd-save">Save project</button><label>Saved projects<select id="fd-saves"></select></label><button id="fd-load">Open</button><button id="fd-delete-save">Delete saved</button><button id="fd-export">Export JSON</button><button id="fd-import">Import JSON</button><input type="file" id="fd-file" accept="application/json,.json" hidden><button id="fd-png">Export floor PNG</button><button id="fd-print">Print report</button></div>
+    <div class="fd-report" id="fd-report"><section><p class="fd-kicker">04 / SYSTEM CHECK</p><h3>Farm diagnostics</h3><div id="fd-diagnostics"></div></section><section><p class="fd-kicker">05 / MATERIALS</p><h3>Bill of materials</h3><div id="fd-materials"></div></section><section><p class="fd-kicker">06 / UTILITIES</p><h3>Power &amp; irrigation plan</h3><div id="fd-circuits"></div></section><section><p class="fd-kicker">07 / BUILD ORDER</p><h3>Construction checklist</h3><div id="fd-checklist"></div></section></div>
+    <details class="fd-notes"><summary>Model notes, sources &amp; controls</summary><p>Each square represents a 3 m foundation. Coverage uses planter slot centers on the same floor, not physics, wall occlusion, vertical reach or collision detection. A covered slot is not a guarantee of 100% plant condition. Sprinkler demand uses 2 mL/s per active sprinkler and source limits are conservative. Power assignments are logical groups, not a full electrical-port simulator; build the distribution and check in-game active usage. Batteries are assumed fully charged for autonomy estimates. Construction blocks, wire/hose tools and blueprint research are not included in the equipment cost. Device costs and rates are editable in the catalog in <code>js/farm-data.js</code>. No live game connection.</p><p>Keyboard: 1 Select, 2 Place, 3 Move, 4 Erase; Delete removes selection; Ctrl+Z / Ctrl+Shift+Z undo/redo while the editor is focused. Click items in Select mode or use the inspector item list.</p><p>References: <a href="https://wiki.facepunch.com/rust/Farming_Basics" target="_blank" rel="noopener">Facepunch Farming Basics</a> · <a href="https://www.rustrician.io/handbook/" target="_blank" rel="noopener">Rustrician Electrical Handbook</a> · <a href="https://rustpedia.com/item/large-planter-box" target="_blank" rel="noopener">Large Planter Box recipe</a> · <a href="https://rustmanual.com/items/planter-small" target="_blank" rel="noopener">Small planter</a> · <a href="https://wiki.facepunch.com/rust/item/composter" target="_blank" rel="noopener">Composter</a>. Planning data reviewed November 2026.</p></details>
+  </div>
+</section>
+      <section class="section em-section" id="electricity" aria-labelledby="em-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / FIELD HANDBOOK / 002</p><h2 id="em-title">Electricity handbook.</h2></div><p>Build reliable circuits. Learn the components, follow port-by-port wiring instructions and troubleshoot your base.</p></div>
+        <div id="vg-electricity" class="vg-root" aria-label="Electricity visual guides"></div>
+        <p class="vg-designer-jump">Looking for furnaces, auto sorting or crafting? <a href="#industrial">Open illustrated Industrial guides ↗</a></p>
+        <details class="vg-old-index" open><summary>Component library and classic handbook (70 entries / 22 guides)</summary>
+        <div class="em-shell">
+          <header class="em-head"><div><p class="eyebrow">FIELD MANUAL / SYSTEM 03</p><h3>Wiring, explained.</h3><p>Pick a guide. Gather the parts. Connect the labeled ports in Rust.</p></div><div class="em-metrics"><div><strong id="em-guide-count">—</strong><span>BUILD GUIDES</span></div><div><strong id="em-component-count">—</strong><span>REFERENCE ENTRIES</span></div></div></header>
+          <div class="em-basics"><article><span>01 / POWER</span><h4>Start at the source.</h4><p>Generation charges a battery; the battery supplies the circuit. Output rating limits what can run at once.</p></article><article><span>02 / DISTRIBUTION</span><h4>Follow the ports.</h4><p>Branch Out reserves a set amount. Power Out carries the remainder. Splitters share power among connected outputs.</p></article><article><span>03 / AUTOMATION</span><h4>Keep networks separate.</h4><p>Wire Tool carries power and signals. Pipe Tool moves items via powered conveyors. Hose Tool carries water.</p></article></div>
+          <nav class="em-shortcuts" aria-label="Featured guides" id="em-shortcuts"></nav>
+          <div class="em-controls"><div role="group" aria-label="Handbook view" class="em-tabs"><button type="button" data-em-tab="guides" aria-pressed="true">Build guides</button><button type="button" data-em-tab="components" aria-pressed="false">Component library</button></div><label class="em-search"><span>Search handbook</span><input id="em-search" type="search" placeholder="Try furnace, turret, battery…" autocomplete="off"></label></div>
+          <div id="em-filters" class="em-filters" aria-label="Filter category"></div>
+          <p id="em-result" class="em-result" role="status"></p><div id="em-list" class="em-list"></div>
+          <div id="em-detail" class="em-detail" hidden></div>
+          <div class="em-reference"><h4>Reference &amp; version notes</h4><p>PC Rust, vanilla-oriented; community and official references reviewed November 2026. This is a handbook, not a live circuit simulator. Check current in-game port labels, draw and server rules, particularly for variants and control outputs. Some catalog entries group cosmetic or DLC variants. Exact costs are available from the linked item references when present.</p><p><a href="https://wiki.facepunch.com/rust/Items_Overview" target="_blank" rel="noopener noreferrer">Facepunch item wiki</a> · <a href="https://rust.facepunch.com/news/waves-of-change" target="_blank" rel="noopener noreferrer">2024 electricity changes</a> · <a href="https://rust.facepunch.com/news/industrial-update" target="_blank" rel="noopener noreferrer">Industrial update</a> · <a href="https://rust.facepunch.com/news/solid-foundations" target="_blank" rel="noopener noreferrer">Turret interference</a> · <a href="https://rustrician.io/handbook/" target="_blank" rel="noopener noreferrer">Rustrician handbook</a> · <a href="https://rust.wiki/calculators/electricity" target="_blank" rel="noopener noreferrer">Power reference</a></p></div>
+        </div>
+        </details>
+      </section>
+      <section class="section em-section" id="industrial" aria-labelledby="em-industrial-title">
+        <div class="section-heading"><div><p class="eyebrow">04 / FIELD HANDBOOK / 003</p><h2 id="em-industrial-title">Industrial automation.</h2></div><p>Ready-made production systems. These guides are part of the same handbook — no separate simulator to learn.</p></div>
+        <div id="vg-industrial" class="vg-root" aria-label="Industrial visual guides"></div>
+        <details class="vg-old-index"><summary>Classic handbook / component wiring reference</summary><div id="em-industrial-list" class="em-list em-industrial-list"></div></details>
+      </section>
+      <section class="section" id="building" aria-labelledby="bm-title">
+        <div class="section-heading"><div><p class="eyebrow">05 / CREATOR COLLECTION</p><h2 id="bm-title">Building.</h2></div><p>Real community base designs, from compact bunkers to full clan compounds. Find a design and watch the original builder's tutorial.</p></div>
+        <div id="base-library" class="bl-root" aria-label="Community base video library"></div>
+        <noscript>Enable JavaScript to use the base library.</noscript>
+      </section>
+
+      <section class="section" id="monuments" aria-labelledby="mon-title">
+        <div class="section-heading"><div><p class="eyebrow">06 / MONUMENT LIBRARY</p><h2 id="mon-title">Monuments.</h2></div><p>Quick-access monument cards for every main RT: radiation, required protection, keycards, fuses, rewards, utilities and an instant YouTube guide link.</p></div>
+        <div id="monument-library" class="mon-root" aria-label="Monument library"></div>
+        <noscript>Enable JavaScript to browse the monument library.</noscript>
+      </section>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">04 / THE PROJECT</p><h2 id="about-title">Built for the game.</h2>
+        <div class="about-grid"><div><p>Field Manual is an independent Rust guide project by Lalo. The goal is to make useful game knowledge accessible through free, practical browser-based tools.</p><p>The project is not affiliated with or endorsed by Facepunch Studios or Valve. Rust and its associated marks belong to their respective owners.</p><p>No Steam sign-in is required for the initial release. The planned tools do not require installed companion software or access to the Rust game process.</p></div><div class="author-card"><span class="author-mark" aria-hidden="true">L.</span><p class="eyebrow">CREATED BY</p><h3>Lalo</h3><p>Independent project creator.</p><!-- Add the author's verified public Steam profile URL here only after approval. --></div></div>
+      </section>
+      <footer class="site-footer"><div><strong>FIELD MANUAL.</strong><small>AN INDEPENDENT PROJECT BY LALO / 2026</small></div><a href="#top">Back to top ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+// Curated factual metadata. Null means not reported, never zero.
+const article='https://whenisforcewiperust.com/rust-base-designs';
+const rbd=id=>`https://rustbasedesigns.com/Base/${id}`;
+const lab=id=>`https://rustbaselab.com/base/${id}`;
+const yt=id=>`https://www.youtube.com/watch?v=${id}`;
+// id, display name, creator, year, group range, tags, costs [stone,metal,HQM], daily upkeep [stone,metal,HQM], original editorial description, source, direct listing confirmed
+const rows=[
+['LN5a3vGN63E','Solo/Duo Bunker','pagdawg',2026,1,2,['Bunker','Shooting floor','Starter expansion'],[34000,14000,340],[8400,5500,95],'For a small team that wants a compact main base with a shooting floor and a protected core.',null,true],
+['oL-zn3tA4UQ','The Reaper','pagdawg',2026,1,2,['Bunker','Shooting floor','Starter expansion'],[20000,25000,208],[4600,8000,59],'A more metal-heavy small-group option with a full start-to-finish build tutorial.',null,true],
+['G2gMXt0OzE8','Compact Trio Bunker','tarre',2026,1,3,['Bunker','Starter expansion'],[29100,14575,127],[null,null,null],'A compact main base for up to three players, with six build stages in the original video.',null,true],
+['c4il8UFATAg','Simple Duo Bunker','tarre',2026,1,2,['Bunker','Starter expansion'],[22000,11450,126],[null,null,null],'An accessible lower-budget design for players who prefer a short construction sequence.',null,true],
+['XyU_NggrMYQ','Sacred','Limi Lab',2026,1,2,['Bunker','Open core','Compound','Shooting floor','Starter expansion'],[39000,72000,null],[9000,13000,90],'For an established solo or duo with enough metal to invest in a larger shell.',article,false],
+['DmoqYgyEyUA','The Onyx','spinky.',2026,1,3,['Starter expansion'],[43000,50000,277],[10000,13000,73],'A 2×2-based option for a longer wipe or a small group that has already gathered resources.',article,false],
+['UK_OziKOi5A','The Siege','Nini Rust',2026,1,2,['Bunker','Open core','Compound','Multi-TC','Shooting floor','Farm','Starter expansion'],[20000,50000,250],[9000,15000,130],'A metal-intensive solo/duo main that combines living space, crop production and external building privilege.',rbd('ea49c65a-26dc-4abc-af3f-3f994c823f43'),false],
+['u8e9DNQOV_w','The Brand','spinky.',2026,1,3,['Bunker','Multi-TC','Compound','Wide gaps','Shooting floor','Starter expansion'],[39000,60000,65],[9000,17000,35],'Suitable for a small group prioritizing movement between its compound and roof.',rbd('c9da46dd-299e-4134-9b3d-9a6a693047d8'),false],
+['yP4eWLAq4Ic','The GOAT','Kobe',null,2,4,['Bunker','Open core','Compound','Multi-TC','Wide gaps','Shooting floor','Starter expansion'],[130000,92000,355],[39000,24000,null],'A resource-heavy full-wipe main for a coordinated duo, trio or quad.',rbd('7b74df7b-3776-4c29-81cf-35c7aa7effc3'),false],
+['3kbhdtMpFl0','The Ingot','spinky.',2026,3,3,['Bunker','Open core','Starter expansion'],[73000,64000,450],[13000,14000,11],'An offline-oriented trio layout with an open central storage area.',article,false],
+['Ed-kn4cZeR4','Nemesis 2','Faded',2025,3,4,['Bunker','Open core','Multi-TC','Shooting floor'],[52000,64000,634],[15600,19200,200],'A small-group main with a surrounding shell and roof bunkers.',article,false],
+['zb5nqfL4QaA','The Pearl','Nini Rust',2026,2,5,['Bunker','Open core','Compound','Multi-TC','Shooting floor','Starter expansion'],[58000,91000,300],[14000,23000,100],'An expandable 2×2 for groups looking for more room and multiple protected areas.',article,true],
+['HQ33BUfOCrY','The Eclipse','Nini Rust',2026,2,4,['Bunker','Open core','Compound','Multi-TC','Wide gaps','Shooting floor','Floor stacking'],[48000,89000,380],[13000,22000,140],'For experienced builders comfortable with floor stacking and several separate bunkers.',rbd('76e27b16-a0ca-4dc5-a562-dc3d8dc38c1e'),false],
+['s-RPbCH57_U','The Bloom','Nini Rust',2026,2,4,['Bunker','Open core','Compound','Multi-TC','Shooting floor'],[54000,108000,250],[13000,22000,135],'A 3×1-derived main with several protected storage sections.',article,false],
+['icPNuo3dUwU','The Lockbox','spinky.',2026,3,8,['Open core','Wide gaps','Compound'],[69000,103000,180],[17000,20000,52],'An option for established groups looking for a large open-core layout and exterior shielding.',lab('the-lockbox-group-rust-base-open-core-wide-gap-shield-wall'),false],
+['YaqXSOAYIN4','The Scorpion','Kobe',2026,4,6,['Bunker','Open core','Compound','Multi-TC','Wide gaps','Shooting floor'],[null,150000,null],[null,43000,null],'A 3×1-core main designed for four to six players who can sustain a high metal upkeep.',rbd('68a7d8dc-5898-4a53-8672-1d8b277fbfb7?MultiTC=true'),false],
+['amwG4nbwXzc','The Sentinel','spinky.',2026,4,8,['Open core','Compound','Multi-TC'],[103000,78000,460],[17000,16000,230],'A larger 4×4-style design intended for active group defense.',article,false],
+['ZHjyPal9kFs','The Yutani','spinky.',2025,5,12,['Bunker','Multi-TC','Starter expansion'],[132000,123000,800],[35000,38000,300],'A five-plus-player main with substantial HQM requirements and room to expand.',article,false],
+['KOXU_EEX8uI','The Aura','ap - rust',2025,4,8,['Open core','Compound','Multi-TC','Wide gaps','Shooting floor','Starter expansion'],[16000,235000,52],[null,45000,10],'A sheet-metal group base with a 64-box main loot room, intended for longer or modded wipes.',rbd('d8b8dc22-d78d-41dc-a53e-54cae3719cde'),true],
+['XU8vcN4JxO0','The Margherita','Crow',2026,8,12,['Open core','Compound','Multi-TC','Wide gaps','Shooting floor'],[160000,170000,500],[44000,72000,200],'A symmetrical large-group design with multiple storage levels and compound towers.',article,false],
+['K01DP7SWGtY','Lagoon 2.0','Limi Lab',2026,5,12,['Open core','Compound','Starter expansion'],[95000,255000,null],[22000,63000,null],'A substantial group main with an outer shell and a spacious center.',article,false],
+['UYecaTFSEAg','Everest V3','Limi Lab',2025,8,20,['Bunker','Open core','Compound','Multi-TC','Shooting floor','Floor stacking','Starter expansion'],[null,400000,null],[null,150000,600],'A high-budget clan project with multiple shooting levels and a large central storage area.',rbd('a7af4540-25f3-4941-a0fd-f4417afb933b'),true],
+['-0rU6iZIGZE','The OT Main','Pang',2026,25,25,['Open core','Compound','Shooting floor','Honeycomb'],[3600,850000,2000],[1100,290000,700],'A very large competitive clan design, listed for a 25-player group.',lab('the-ot-main-25-man-clan-base-2026'),false],
+['nfpXTZERXeQ','The Farm','notVertzo',null,4,8,['Farm','Bunker','Multi-TC','Compound','Shooting floor'],[50000,40000,null],[12000,14000,null],'For groups that want crop production and defense in the same building; the design has 16 planters.',rbd('7ff7a88c-18f8-4c0c-adf9-fd8fbe405fd4'),false],
+['Zecc_yv3g9o','The Perfect Berry Base','My Gaming Experience',2024,1,3,['Farm'],[null,null,null],[null,null,null],'A dedicated berry farm tutorial with 20 planters and automated water-level control.',null,true],
+['LTA7DwRvDM0','Hideout','Indominus',2026,1,2,['Bunker'],[39300,36300,81],[10900,13700,62],'A smaller main for players seeking a circular starter and turret coverage.',article,true],
+['s96TFd_v58Y','ARC','Indominus',2026,1,3,['Bunker','Multi-TC'],[null,null,null],[null,null,null],'A small-group bunker design; check the video for the exact resource requirements.',null,true]
+];
+const featured=["UK_OziKOi5A","HQ33BUfOCrY","yP4eWLAq4Ic","KOXU_EEX8uI","XyU_NggrMYQ","XU8vcN4JxO0"];
+const ordered=[...featured.map(id=>rows.find(r=>r[0]===id)),...rows.filter(r=>!featured.includes(r[0]))];
+export const BASES=ordered.map(([id,name,creator,year,min,max,tags,cost,upkeep,description,source,direct])=>({id,name,creator,year,min,max,tags,cost,upkeep,description,source:source||yt(id),direct,url:yt(id),thumbnail:`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}));
+export const TAGS=[...new Set(BASES.flatMap(x=>x.tags))].sort();
